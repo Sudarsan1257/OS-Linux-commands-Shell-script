@@ -43,27 +43,31 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-![output1_1](https://github.com/user-attachments/assets/4a45ff84-4b61-4b38-ac5a-8e2f777e4ee8)
+![Screenshot 2025-04-20 141425](https://github.com/user-attachments/assets/3af8d1fd-db6d-4c6e-929a-8baf0daeaa27)
 
 
 cat < file2
 ## OUTPUT
-![output1_2](https://github.com/user-attachments/assets/c9b724ad-372a-4000-8427-dd71c9d54a1f)
+![Screenshot 2025-04-20 141618](https://github.com/user-attachments/assets/4fd80b76-6b3c-4c1c-b6bf-49588574bf59)
+
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-![output1_3](https://github.com/user-attachments/assets/5f2859cc-1510-4456-9a43-7d6654ec5831)
+![Screenshot 2025-04-20 142145](https://github.com/user-attachments/assets/a0670697-17d7-4457-a02b-abaf793254cf)
+
 
 comm file1 file2
  ## OUTPUT
-![output1_4](https://github.com/user-attachments/assets/bf8ade32-d2d0-473c-8a2f-2a07bcab5b2e)
+![Screenshot 2025-04-20 142210](https://github.com/user-attachments/assets/4b060921-8c57-40fd-8517-1dbb9d0d2cdd)
+
 
  
 diff file1 file2
 ## OUTPUT
-![output1_5](https://github.com/user-attachments/assets/cf0e45b7-75b7-4f67-919a-50f34d3203a6)
+
+![Screenshot 2025-04-20 142228](https://github.com/user-attachments/assets/90c15bc2-639b-49ea-b05a-0d90cd795e4d)
 
 
 #Filters
@@ -87,20 +91,23 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![Screenshot 2025-04-20 142523](https://github.com/user-attachments/assets/7eb18e29-2b2a-4a01-acb1-a6ec6abfa7ba)
 
-![output1_6](https://github.com/user-attachments/assets/bc29186c-68a2-482a-bde2-2e1093b18324)
+
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-![output1_6](https://github.com/user-attachments/assets/35f22918-3233-4d90-8cd9-cf1bdf5e446f)
+![Screenshot 2025-04-20 142555](https://github.com/user-attachments/assets/28aab90d-4f38-4bdc-beea-6de1ed9fa40d)
+
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![output1_8](https://github.com/user-attachments/assets/fcce6238-e8cb-4190-99c0-a93be498a6ea)
+![Screenshot 2025-04-20 142742](https://github.com/user-attachments/assets/4b77270c-273b-4e32-9168-5967a7b118cc)
+
 
 
 cat < newfile 
@@ -116,45 +123,48 @@ hello world
  ```
 grep Hello newfile 
 ## OUTPUT
+![Screenshot 2025-04-20 142949](https://github.com/user-attachments/assets/2ac5ef1e-d925-4ef0-8b6d-e94efc2d13da)
 
-![output1_9](https://github.com/user-attachments/assets/52309d36-30e0-48c6-b66c-aa8428da48eb)
 
 
 grep hello newfile 
 ## OUTPUT
 
-![output1_10](https://github.com/user-attachments/assets/b91c9116-c607-420b-bd6d-a1fb67f8aaa4)
-
+![Screenshot 2025-04-20 143052](https://github.com/user-attachments/assets/ff3b6595-c23a-4bee-b39a-0fe6ddc7d8c0)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-![output1_11](https://github.com/user-attachments/assets/2da9076f-d6e8-4ff3-b12f-1fac24f8c058)
+![Screenshot 2025-04-20 143102](https://github.com/user-attachments/assets/a39d7477-e474-4c34-80d4-9a8db7e01c81)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![Screenshot 2025-04-20 143204](https://github.com/user-attachments/assets/741961a0-a1c3-435c-bf7c-d97bd4107e3e)
 
-![output1_12](https://github.com/user-attachments/assets/1afff798-396c-4bc2-a35c-efcaf4cb1818)
+
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-![output1_13](https://github.com/user-attachments/assets/b124eefc-e335-4861-a03d-93f76062fb72)
 
+
+![Screenshot 2025-04-20 143504](https://github.com/user-attachments/assets/663caa43-653c-478d-8178-6e72608deff9)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-![output1_15](https://github.com/user-attachments/assets/b0fa91b5-5555-4224-8c52-1910d43da9a8)
+![Screenshot 2025-04-20 143521](https://github.com/user-attachments/assets/1145616c-2adc-4591-848d-a30add0acbec)
+
 
 
 grep -w -n world newfile   
 ## OUTPUT
-![output1_15](https://github.com/user-attachments/assets/3c9b851b-1519-438b-b668-d773f0fa9154)
+![Screenshot 2025-04-20 143538](https://github.com/user-attachments/assets/672b9d02-144c-4a4b-bb0f-6ff665acfba0)
+
 
 
 cat < newfile 
@@ -179,7 +189,8 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-![output1_16](https://github.com/user-attachments/assets/2cde4bc3-39f8-4da0-ae91-b8a28ef5bcdf)
+![Screenshot 2025-04-20 143554](https://github.com/user-attachments/assets/1bd6ff72-5fbb-4b87-8e42-bbbe0baca7b5)
+
 
 
 egrep -w '(H|h)ello' newfile 
